@@ -1,0 +1,460 @@
+*{padding: 0;
+margin: 0;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+body{
+box-sizing: border-box;
+}
+
+.all{
+    padding-left: 5%;
+padding-right: 5%;
+padding-top: 2%;
+}
+.one{height: 100vh;
+width:100%;
+}
+
+.manu{
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    justify-content: space-between;
+    z-index: 1;
+
+
+
+}
+
+.manu h1{color:orange}
+.manu-list ul{
+    list-style: none;
+    display: flex;
+}
+
+.manu-list ul li{
+    padding: 0 20px;
+}
+
+.manu-list ul li a{text-decoration: none;
+color: black;
+}
+
+.manu-list ul li a:hover{color:orange;transition: 0.4s;}
+
+.btn{
+    padding: 7px 20px;
+    border-radius: 15px;
+    background: transparent;
+    outline: none;
+    border: 1px solid black;
+}
+
+.btn:hover{
+    background-color:orange;
+    border: 1px solid white;
+    color: white;
+    transition: 0.4s;
+
+}
+
+.background-image{width:100%;
+height: 80vh; 
+background-image: url(food-bg.webp);background-position: center;
+margin-top: 20px;
+border-radius: 20px;
+background-size: cover;
+display: flex;
+
+}
+
+
+.bg-text{text-align: justify; 
+    transform: translate(590px,100px);
+color: white;}
+
+.bg-text h1{font-size: 3.5rem;}
+
+.bg-text p {
+    padding: 20px 0;
+
+}
+
+.btn1{
+    padding: 10px 20px;
+    border-radius: 15px;
+    background:white;
+    outline: none;
+    border: 0;
+color:black;
+position: relative;}
+
+.two{width:100%;
+      height:260vh;}
+
+.two h1 {
+    padding-bottom: 10px;
+}
+
+.two small{color:grey}
+
+.single-circle-img img{border-radius: 50%;
+    height: 170px; 
+    width: 170px;
+padding: 20px 12px;}
+
+
+.single-circle-img {align-items: center;
+    text-align: center;}
+
+    .single-circle-img p {
+        color: grey;
+    }
+
+    .circle-images{display: flex;}
+
+    hr{margin: 27px 0;}
+
+
+.single-dish-box {
+    width: 270px;
+    height: 330px;
+    background-color:white;
+    box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.602);
+    border-radius: 10px;
+}
+
+.single-dish-box:hover{transform: translateY(-3px);transition: 0.4s;}
+
+.single-dish-box img{
+    border-radius: 10px 10px 0 0;
+}
+
+.dish-details{display: flex;
+align-items: center;
+text-align: center;
+justify-content: space-between;
+padding: 5px 10px;}
+
+
+.single-dish-box small{position: absolute;
+padding-left: 10px; padding-bottom: 5px;}
+
+.price-order{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 40px 10px;
+    position: relative;
+    
+}
+
+.btn2{
+    padding: 10px 20px;
+    border-radius: 15px;
+    background:orange;
+    outline: none;
+    border: 0;
+color:black;
+position: relative;}
+
+.btn2:hover{background-color: rgba(0, 0, 0, 0.469);}
+
+.star-icons{color: goldenrod;font-size: 12px;}
+
+.dish-box{display:flex;
+justify-content: space-between;
+padding: 15px 0;}
+
+.three{
+    height: 50vh;
+    max-width:100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 15px 15px 0 0;
+    margin-top: 20px;
+}
+
+.contact-info{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-card1{display: flex;
+flex-direction: column;
+}
+
+.contact-card1 small{
+    padding: 20px 0;
+    color: white;
+}
+
+.icon{
+    font-size: 30px;
+    letter-spacing: 8px;
+}
+.contact-card2{align-items: center;
+
+}
+
+.contact-card2 ul{list-style: none;}
+.contact-card2 ul a{text-decoration: none;
+line-height: 25px;
+color: white;}
+
+.contact-card2 ul a:hover{color:orange;}
+.contact-card3{display: flex;
+flex-direction: column;
+line-height: 25px;}
+.contact-card3 h1{padding-bottom: 10px;}
+.contact-card3 small{color: white;}
+.copyright{text-align: center; 
+    align-items: center; 
+    margin-top: 60px; 
+    font-size: 15px;color:white;}
+
+
+
+
+
+
+
+
+
+
+
+/* Base styles (default) are already provided in your existing CSS */
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+    .all {
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 1%;
+        
+    }
+
+
+
+
+.one{height: 87vh;}
+    .manu {
+        flex-direction:column;
+        text-align: center;
+        
+        
+    
+    }
+
+    .manu-list ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .manu-list ul li {
+        padding: 10px 0;
+    }
+
+    .background-image {
+        height: 60vh;
+    }
+
+    .bg-text {
+        transform: translate(0, 0);
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .circle-images {
+        flex-direction:column;
+        align-items: center;
+        
+    }
+
+    .single-circle-img {
+        margin-bottom: 20px;
+        
+    
+    }
+
+.single-circle-img img{height: 260px;
+width: 260px;}
+
+    .dish-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .single-dish-box {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .contact-info {
+    
+        
+        flex-direction: column;
+        align-items: center;
+        padding: 5% 5%;
+        
+    
+        
+    }
+.three{height: 70vh;}
+    .contact-card1,
+    .contact-card2,
+    .contact-card3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .three small{color: white;}
+
+    .contact-card2 ul {
+        padding: 0;
+    }
+
+    .contact-card2 ul li {
+        line-height: 30px;
+    }
+
+    .contact-card3 small {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .all {
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 0.5%;
+    }
+
+    .manu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .manu-list ul {
+        flex-direction: column;
+    }
+
+    .manu-list ul li {
+        padding: 10px 0;
+    }
+
+    .background-image {
+        height: 50vh;
+    }
+
+    .bg-text {
+        transform: translate(0, 0);
+        text-align: center;
+        padding: 0 5%;
+    }
+
+
+    .bg-text h1{margin-top: 100px;}
+    .circle-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .single-circle-img {
+        margin-bottom: 15px;
+    }
+
+    .dish-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .single-dish-box {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        padding: 5% 5%;
+    }
+
+    .contact-card1,
+    .contact-card2,
+    .contact-card3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-card2 ul li {
+        line-height: 30px;
+    }
+
+    .contact-card3 small {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* For very small devices (phones) */
+@media (max-width: 480px) {
+
+   
+    
+    .manu h1 {
+        font-size: 1.5rem;
+    }
+
+    .bg-text h1 {
+        font-size: 2.5rem;
+        margin-top: 100px;
+    }
+
+    .bg-text p {
+        font-size: 0.9rem;
+    }
+
+    .btn1,
+    .btn2 {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .single-circle-img img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .single-dish-box {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .dish-box{
+        margin-bottom: -20px;
+    }
+
+    .contact-info {
+        padding: 5% 2%;
+    }
+
+    .contact-card1,
+    .contact-card2,
+    .contact-card3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
